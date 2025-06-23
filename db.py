@@ -13,7 +13,8 @@ def connection():
         return conn
     except psycopg2.Error as e:
         print(f"Erro ao conectar ao banco de dados: {e}")
-        return None
+        return None 
+        
 
 def close_connection(conn):
     """Fecha a conexão com o banco de dados."""
